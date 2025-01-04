@@ -41,6 +41,11 @@ an no individual can bypass the login and access the DDOS panel.
           Allow from 127.0.0.1
       </Files>
 
+      # the 'client.py' payload will need to be modified as well. When you upload your
+      # files, you need to change the variable 'gate_url' to point to your gate.php file
+      #
+      # example: gate_url = 'http://your-botnet.com/gate.php'
+
 NOTE:
 inside of the auth.js is a password for the login. this will need to be updated
 to suit your needs.
