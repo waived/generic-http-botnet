@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/waived</title>
+    <style>
+        /* page styles */
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 1px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        /* control box */
+        form {
+            background-color: #000000;
+            padding: 20px;
+            border: 1px solid #FFFFFF;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-top: 5px;
+            display: block;
+            color: #FFFFFF;
+            text-shadow: 0 0 5px #FFFFFF;
+        }
+
+        /* input fields and button */
+        input[type="password"], button {
+            background-color: #000000;
+            color: #FFFFFF;
+            border: 2px solid #FF0000;
+            padding: 12px;
+            width: 100%;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* focus states */
+        input[type="password"]:focus, button:focus {
+            outline: none;
+            box-shadow: 0 0 8px #FFFFFF, 0 0 15px #FFFFFF;
+            border-color: #FFFFFF;
+        }
+
+        button {
+            background-color: #FFFFFF;
+            color: #000000;
+            font-size: 1.2em;
+            padding: 10px 25px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: auto;
+        }
+
+        button:hover {
+            color: #000000;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 5px #FFFFFF, 0 0 15px #FFFFFF;
+        }
+
+        button:active {
+            color: #000000;
+            background-color: #FFFFFF;
+        }
+
+        /* input field glow */
+        input[type="password"] {
+            background-color: #000000;
+            color: #FFFFFF;
+            border: 1px solid #FFFFFF;
+        }
+
+        input[type="password"]:focus {
+            background-color: #000000;
+            box-shadow: 0 0 8px #FFFFFF;
+            border-color: #FFFFFF;
+        }
+
+        /* placeholder styling */
+        input[type="password"]::placeholder {
+            color: #888;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ADMIN PANEL</h1>
+    <form action="auth.php" method="POST">
+        <label for="password">AUTHENTICATION KEY</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">PROCEED TO LOGIN</button>
+    </form>
+</body>
+</html>
