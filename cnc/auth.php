@@ -1,8 +1,8 @@
 <?php
 // change 'password' to your desired password.
-// it would also be smarted to store this as a physical
-// hash rather than having the raw text hased upon
-// execution. totally up to you
+// it would also be smarter to store this as a physical
+// hash rather than having the raw-text password hashed
+// upon execution. totally up to you
 $stored_hashed_password = hash('sha256', 'password');
 
 // if captured...
