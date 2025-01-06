@@ -1,9 +1,9 @@
 PROOF OF CONCEPT:
 
-This project was designed to by a incredibly simple example of how an HTTP botnet
+This project was designed to be an incredibly simple example of how an HTTP botnet
 may choose to operate. This specific bot uses "HTTP Polling" which today is a rather
 obsolete method. Each infected device will make a request to the server every 30 sec
-to get an update as to what needs accomplished.
+to get an update as to what needs to be accomplished.
 
 ATTACK METHODS:
 
@@ -21,8 +21,8 @@ concurrently to engage more targets.
 
 SETUP:
 
-You are going to want to set permissions for your login files and dashboard so
-an no individual can bypass the login and access the DDOS panel.
+You are going to want to set permissions for your login panel and dashboard so
+that no individual can bypass the authentication and access the DDOS panel.
 
       # Make dashboard readable only by the server and admin (not accessible to public)
       chmod 600 index.html
