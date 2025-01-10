@@ -1,9 +1,10 @@
 PROOF OF CONCEPT:
 
 This project was designed to be an incredibly simple example of how an HTTP botnet
-may choose to operate. This specific bot uses "HTTP Polling" which today is a rather
-obsolete method. Each infected device will make a request to the server every 30 sec
-to get an update as to what needs to be accomplished.
+may choose to operate. This specific bot uses "HTTP Polling" which is a low-bandwidth
+option fon controlling a large overhead of bots (opposed to other methods such as
+WebSockets or HTTP Streaming). Each infected device will make a request to the server
+every 30 seconds to get an update as to what needs to be accomplished.
 
 ATTACK METHODS:
 
